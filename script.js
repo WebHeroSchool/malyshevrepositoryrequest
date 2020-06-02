@@ -47,7 +47,7 @@ fetch('https://api.github.com/users/' + name)
     	createBio();
     	createAvatar();
         } else {
-        	alert('Информация о пользователе не доступна')
+        	alert('Информация о пользователе не доступна!')
         }
     })
-    .catch(err => alert(err + 'Информация о пользователе не доступна'));
+    .catch(err => alert(err + 'Информация о пользователе не доступна!'));
