@@ -47,8 +47,7 @@ fetch('https://api.github.com/users/' + name)
     	createBio();
     	createAvatar();
         } else {
-        	alert('Информация о пользователе не доступна!');
-        	window.location.href = 'https://webheroschool.github.io/malyshevrepositoryrequest/';
+        	prompt('Информация о пользователе не доступна, вернитесь в мой профиль' + 'https://webheroschool.github.io/malyshevrepositoryrequest/');
         }
     })
     .catch(err => alert(err + 'Информация о пользователе не доступна!'));
