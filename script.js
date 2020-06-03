@@ -17,7 +17,7 @@ fetch('https://api.github.com/users/' + name)
   	let avatar = json.avatar_url;
   	let name = json.login;
   	let bio = json.bio;
-  	let profile =json.html_url;
+  	let profile = json.html_url;
     if (name) {
 
     	let createAvatar = () => {
@@ -47,7 +47,8 @@ fetch('https://api.github.com/users/' + name)
     	createBio();
     	createAvatar();
         } else {
-        	alert('Информация о пользователе не доступна')
+        	alert('Информация о пользователе не доступна!');
+        	getUserName(url);
         }
     })
-    .catch(err => alert(err + 'Информация о пользователе не доступна'));
+    .catch(err => alert(err + 'Информация о пользователе не доступна!'));
