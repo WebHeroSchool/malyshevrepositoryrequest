@@ -48,7 +48,7 @@ fetch('https://api.github.com/users/' + name)
     	createAvatar();
         } else {
         	alert('Информация о пользователе не доступна!');
-        	getUserName(url);
+        	elementForHeader.innerText = 'Информация о пользователе не доступна!';
         }
     })
     .catch(err => alert(err + 'Информация о пользователе не доступна!'));
