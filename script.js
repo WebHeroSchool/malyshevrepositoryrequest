@@ -50,7 +50,7 @@ fetch('https://api.github.com/users/' + name)
         	alert('Информация о пользователе не доступна!');
         	setTimeout(function() {
         		window.location.href = 'https://webheroschool.github.io/malyshevrepositoryrequest/';
-        	}, 5000);
+        	}, 3000);
         }
     })
     .catch(err => alert(err + 'Информация о пользователе не доступна!'));
