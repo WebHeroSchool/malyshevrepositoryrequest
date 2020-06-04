@@ -15,7 +15,7 @@ let name = getUserName(url)
 
 let getNowDate = new Promise((resolve, reject) => {
     let nowDate = new Date();
-    setTimeout(() => nowDate ? resolve(nowDate) : reject ('Ошибка вычисления'), 3000)
+    setTimeout(() => nowDate ? resolve(nowDate) : reject ('Ошибка вычисления даты'), 3000)
   });
 
 
